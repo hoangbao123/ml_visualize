@@ -40,21 +40,10 @@ def plot_historgram(model: str, hidden_size: int, layer_size: int):
     plt.savefig('result/{model}_hidden_{hidden_size}_layer_{layer_size}_histogram.pdf')
     plt.show()
 
+if __name__ == "__main__":
+    # plot_box('stae', 1) 
+    # plot_historgram('stae', 1, 1)
 
-# plot_box('stae', 1) 
-plot_historgram('stae', 1, 1)
-# if __name__ == "__main__":
-#     model_list = ['ann', 'stae']
-#     hidden_size_list = [1]
-#     for model in model_list:
-#         for hidden_size in hidden_size_list:
-# with open('./data/stae_hidden_1.csv', 'w') as f:
-#     f.write('1_layer,2_layer,3_layer,4_layer,5_layer')
-#     f.write('\n')
-#     for i in range(30):
-#         l =  [str(15 + np.random.randn()) for i in range(5)]
-#         f.write(",".join(l))
-#         f.write("\n")
 
             
 
